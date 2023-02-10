@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahir Iqbal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-FontCustom p-6 text-gray-700 bg-gray-50">
+    <header>
+        <nav class="relative container">
+            <!-- flex container -->
+            <div class="flex items-center justify-between">
+                <!-- logo -->
+                <div>
+                    <h1 class="font-FontLogo text-6xl font-medium">Tahir.</h1>
+                </div>
+                <!-- menu items -->
+                <div class="hidden md:flex space-x-10 font-medium text-sm">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+                <!-- button -->
+                <a href="#"
+                    class="hidden md:block px-6 py-2 font-medium text-sm text-white bg-blue-500 shadow-lg rounded-lg hover:bg-blue-400 focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 active:bg-blue-600">Contact
+                    Me</a>
+
+                <!-- hamburger icon -->
+                <button id="menu-btn" class="hamburger | block md:hidden z-10 focus:outline-none cursor-pointer">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="inset-on-menu | hidden fixed flex-col py-32 pl-8 space-y-10 font-medium bg-white drop-shadow-md">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container block md:flex items-center justify-center space-y-10 mt-4">
+            <div class="space-y-6 text-center">
+
+                <div class="relative">
+                    <div class="absolute w-56 h-56 rounded-full top-2 left-4 bg-yellow-400 filter mix-blend-multiply blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
+                    <div class="absolute w-56 h-56 rounded-full -bottom-2 left-8 bg-pink-400 filter mix-blend-multiply blur-3xl opacity-40 animate-blob animation-delay-6000"></div>
+                </div>
+
+                <h1 class="font-bold text-2xl">Hey, I am
+                    <span class="text-4xl">Tahir Iqbal,</span>
+                    <br>
+                    <span class="text-5xl underline decoration-pink-500">a Front End Developer</span>
+                </h1>
+
+                <p class="max-w-[36ch] mx-auto">Passionate about delevering outstanding quality and user experience.</p>
+
+                <button
+                    class="px-6 py-2 bg-blue-500 rounded-lg shadow-lg border font-medium text-sm text-white hover:bg-blue-400 focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 active:bg-blue-600">Hire
+                    me</button>
+            </div>
+
+            <div class="mx-auto flex justify-center">
+                <div>
+                    <img class="w-96 shadow-lg rounded-xl" src="images/me.png" alt="img">
+                </div>
+            </div>
+
+            <!-- <div>
+                <div class="relative">
+                    <div class="absolute w-56 h-56 rounded-full top-12 right-4 bg-blue-500 filter mix-blend-multiply blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div class="absolute w-56 h-56 rounded-full -top-24 right-12  bg-pink-500 filter mix-blend-multiply blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+                    <div class="absolute w-56 h-56 rounded-full -top-12 -right-24  bg-yellow-500 filter mix-blend-multiply blur-3xl opacity-70 animate-blob animation-delay-6000"></div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

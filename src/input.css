@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Prompt:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .animation-delay-2000{
+        animation-delay: 2s;
+    }
+    .animation-delay-4000{
+        animation-delay: 4s;
+    }
+}
+
+
+.hamburger{
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all 0.25;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2.5px;
+    background-color: #374151;
+    transition: all 0.4s;
+}
+
+.hamburger-middle{
+    width: 12px;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.inset-on-menu{
+    inset: 0 0 0 40%;
+}
