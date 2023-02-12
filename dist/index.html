@@ -11,9 +11,9 @@
 
 <body class="font-FontCustom | p-6 text-gray-600 bg-gray-200">
     <header>
-        <nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white px-2 py-2.5 sm:px-4">
+        <nav class="fixed top-0 left-0 z-20 w-full shadow-sm border-b border-gray-200 bg-white px-2 py-2.5 sm:px-4">
             <!-- flex container -->
-            <div class="flex items-center md:justify-evenly justify-between">
+            <div class="flex items-center md:justify-around justify-between">
 
                 <!-- logo -->
                 <div class="border-2 border-yellow-400">
@@ -51,10 +51,10 @@
     </header>
 
     <main class="space-y-16 mt-32">
-        <div class="container block md:flex">
+        <div class="container block md:flex md:items-center space-y-10">
 
             <div class="space-y-10">
-                <div class="flex flex-col justify-center">
+                <div class="text-center md:text-left">
 
                     <h3 class="font-bold text-yellow-500 text-xl">Hi, i am</h3>
                     <h1>
@@ -63,12 +63,13 @@
                         <br>
                     </h1>
                     <h3 class="font-medium text-2xl mt-2">Front End Developer</h3>
-                    <p class="w-[32ch] md:w-[46ch] mt-2">From the first click to the final scroll, I craft visually appealing
+                    <p class="w-[32ch] md:w-[46ch] mt-2 mx-auto">From the first click to the final scroll, I craft
+                        visually appealing
                         and highly responsive websites that make your brand stand out.</p>
 
                 </div>
 
-                <div>
+                <div class="flex justify-center md:justify-start">
                     <button
                         class="px-6 py-2 font-medium text-sm text-white bg-yellow-500 shadow-lg rounded-lg hover:bg-yellow-400 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 active:bg-yellow-600 active:scale-110 duration-300">
                         Contact Me
@@ -77,7 +78,27 @@
             </div>
 
             <div>
+                <div>
+                    <img src="images/hero.png" alt="img">
+                </div>
 
+                <div class="flex gap-2 justify-center">
+
+                    <div class="flex flex-col gap-2">
+                        <P class="font-bold text-sm max-w-fit rounded-sm shadow-sm bg-gray-800 text-white px-4 py-1">
+                            Html/Css</P>
+                        <P class="font-bold text-sm max-w-fit rounded-sm shadow-sm bg-yellow-500 text-white px-4 py-1">
+                            Javascript</P>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <p class="font-bold text-sm max-w-fit rounded-sm shadow-sm bg-yellow-400 text-white px-4 py-1">
+                            Tailwind Css</p>
+                        <p class="font-bold text-sm max-w-fit rounded-sm shadow-sm bg-white px-4 py-1">Java</p>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
