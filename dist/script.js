@@ -7,6 +7,8 @@ btn.addEventListener('click', () =>{
     nav.classList.toggle('flex');
 });
 
+// active status
+
 const navItems = document.querySelectorAll('nav a');
 for(var i=0; i<navItems.length; i++){
     navItems[i].addEventListener('click', function(){

@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-FontCustom p-6 text-gray-700 bg-gray-50">
+<body class="font-FontCustom | p-6 text-gray-600 bg-gray-200">
     <header>
-        <nav class="relative container">
+        <nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white px-2 py-2.5 sm:px-4">
             <!-- flex container -->
-            <div class="flex items-center justify-between">
+            <div class="flex items-center md:justify-evenly justify-between">
 
                 <!-- logo -->
-                <div>
-                    <h1 class="font-FontLogo text-6xl font-medium">Tahir.</h1>
+                <div class="border-2 border-yellow-400">
+                    <h1 class="text-6xl font-medium px-4 text-yellow-400">T.</h1>
                 </div>
                 <!-- menu items -->
                 <div class="nav-list | hidden md:flex space-x-20 font-medium text-sm">
@@ -26,12 +26,12 @@
                     <a href="#">Contact</a>
                 </div>
                 <!-- button -->
-                <a href="#"
-                    class="hidden md:block px-6 py-2 font-medium text-sm text-white bg-blue-500 shadow-lg rounded-lg hover:bg-blue-400 focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 active:bg-blue-600 active:scale-110 duration-300">Contact
-                    Me</a>
+                <button
+                    class="hidden md:block px-6 py-2 font-medium text-sm text-white bg-yellow-500 shadow-lg rounded-lg hover:bg-yellow-400 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 active:bg-yellow-600 active:scale-110 duration-300">
+                    Hire me
+                </button>
 
-                <!-- hamburger icon -->
-                <button id="menu-btn" class="hamburger | block md:hidden z-10 focus:outline-none cursor-pointer">
+                <button id="menu-btn" class="hamburger | md:hidden z-10 px-4 focus:outline-none cursor-pointer">
                     <span class="hamburger-top"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
@@ -41,7 +41,7 @@
             <!-- mobile menu -->
             <div class="md:hidden">
                 <ul id="menu"
-                class="inset-on-menu nav-list | hidden fixed flex-col py-32 pl-8 space-y-10 font-medium bg-white drop-shadow-md">
+                    class="inset-on-menu nav-list | hidden fixed flex-col py-32 pl-8 space-y-10 font-medium bg-white drop-shadow-md">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
@@ -50,22 +50,34 @@
         </nav>
     </header>
 
-    <main class="space-y-16">
-        <div class="container block md:flex items-center justify-center mt-16">
-            <div class="space-y-6 text-center">
+    <main class="space-y-16 mt-32">
+        <div class="container block md:flex">
 
-                <h1 class="font-bold text-2xl text-gradient">Hey, I am
-                    <span class="text-4xl">Tahir Iqbal,</span>
-                    <br>
-                    <span class="text-4xl">a</span>
-                    <span class="text-6xl">Front End Developer</span>
-                </h1>
+            <div class="space-y-10">
+                <div class="flex flex-col justify-center">
 
-                <p class="max-w-[36ch] mx-auto">Passionate about delevering outstanding quality and user experience.</p>
+                    <h3 class="font-bold text-yellow-500 text-xl">Hi, i am</h3>
+                    <h1>
+                        <span class="text-6xl font-extrabold">Tah<span class="text-yellow-500">i</span>r I<span
+                                class="text-yellow-500">q</span>bal</span>
+                        <br>
+                    </h1>
+                    <h3 class="font-medium text-2xl mt-2">Front End Developer</h3>
+                    <p class="w-[32ch] md:w-[46ch] mt-2">From the first click to the final scroll, I craft visually appealing
+                        and highly responsive websites that make your brand stand out.</p>
 
-                <button
-                    class="px-6 py-2 bg-blue-500 rounded-lg shadow-lg border font-medium text-sm text-white hover:bg-blue-400 focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 active:bg-blue-600 active:scale-110 duration-300">Hire
-                    me</button>
+                </div>
+
+                <div>
+                    <button
+                        class="px-6 py-2 font-medium text-sm text-white bg-yellow-500 shadow-lg rounded-lg hover:bg-yellow-400 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 active:bg-yellow-600 active:scale-110 duration-300">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+
+            <div>
+
             </div>
         </div>
     </main>
