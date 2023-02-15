@@ -14,11 +14,6 @@ module.exports = {
     },
     extend: {
 
-      fontFamily: {
-        FontBody: "Prompt",
-        FontLogo: "Arizonia",
-      },
-
       animation: {
         blob: "blob 7s infinite",
       },

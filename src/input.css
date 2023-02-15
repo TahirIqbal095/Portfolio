@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Prompt:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,7 +19,6 @@
 
 .text-gradient {
     background: linear-gradient(90deg, #3792e4, #31cabd);
-    ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -81,7 +79,7 @@
 
 .nav-list a:is(:link, :active, :visited).active::after {
     content: '';
-    background-color: #eab308;
+    background-color: #6d28d9;
     width: 100%;
     height: 3px;
     bottom: -10px;
@@ -91,7 +89,7 @@
 .nav-list a::after {
     content: "";
     position: absolute;
-    background-color: #eab308;
+    background-color: #6d28d9;
     left: 0;
     height: 3px;
     width: 0;
@@ -109,5 +107,5 @@
 
 .nav-list a:hover,
 .nav-list a:focus {
-    color: #eab308;
+    color: #6d28d9;
 }
