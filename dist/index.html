@@ -12,25 +12,25 @@
     <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="scroll-smooth font-body text-gray-900">
     <header>
-        <nav class="fixed top-0 left-0 z-20 w-full shadow-sm border-b border-gray-300 bg-gray-100 px-2 py-2.5 sm:px-4">
+        <nav class="fixed top-0 left-0 z-20 w-full shadow-sm border-b bg-white opacity-96 px-2 py-2.5 sm:px-4">
             <!-- flex container -->
             <div class="flex items-center md:justify-around justify-between">
 
                 <!-- logo -->
-                <div class="border-2 border-violet-700">
-                    <h1 class="text-6xl font-medium px-4 text-violet-700">T.</h1>
+                <div class="border-4 border-violet-700">
+                    <h1 class="text-6xl font-medium px-4 text-violet-700">T</h1>
                 </div>
                 <!-- menu items -->
-                <div class="nav-list | hidden md:flex space-x-20 font-medium text-sm text-gray-900">
-                    <a href="#" class="active">About</a>
-                    <a href="#">Projects</a>
+                <div class="nav-list | hidden md:flex space-x-20 font-medium text-sm">
+                    <a href="#About" class="active">About</a>
+                    <a href="#Projects">Projects</a>
                     <a href="#">Contact</a>
                 </div>
                 <!-- button -->
                 <button
-                    class="hidden md:block px-6 py-2 font-medium text-sm text-white bg-violet-600 shadow-lg rounded-lg hover:bg-violet-500 focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 active:bg-violet-700 active:scale-110 duration-300">
+                    class="hidden md:block px-6 py-2 font-medium text-sm text-white bg-violet-700 shadow-lg rounded-lg hover:bg-violet-600 focus:ring-2 focus:ring-offset-2 focus:ring-violet-600 active:bg-violet-800 active:scale-110 duration-300">
                     Hire me
                 </button>
 
@@ -42,106 +42,154 @@
             </div>
 
             <!-- mobile menu -->
-            <div class="md:hidden">
-                <ul id="menu"
-                    class="inset-on-menu nav-list | hidden fixed flex-col py-32 pl-8 space-y-10 font-medium bg-white text-gray-900 drop-shadow-md">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div id="menu" class="inset-on-menu | md:hidden hidden fixed shadow-2xl bg-gray-50">
+                <div>
+                    <div>
+                        <ul class="nav-list | flex flex-col py-44 pl-8 space-y-16 font-medium text-2xl drop-shadow-xl">
+
+                            <li>
+                                <a href="#"><span class="mr-2"><i class="fa-solid fa-user"></i></span>About</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="mr-2"><i class="fa-solid fa-hammer"></i></span> Projects</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="mr-2"><i class="fa-solid fa-address-book"></i></span>
+                                    Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex gap-4 pl-8">
+                        <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    </div>
+
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="space-y-12 mt-32">
+    <main class="space-y-12 mt-44">
         <section>
 
-            <div class="container">
+            <div>
 
-                <div class="flex flex-col justify-center text-center">
-                    <h1 class="font-extrabold text-6xl">Frontend Web Developer</h1>
-                    <p class="w-[38ch] md:w-[66ch] text-lg mx-auto mt-4">From the first click to the final scroll, I
+                <div class="flex flex-col justify-center text-center space-y-8">
+                    <h1 class="font-extrabold font-header text-gradient sm:font-bold text-6xl">Frontend Web Developer
+                    </h1>
+                    <p class="text-xl mx-auto">Creating engaging web experiences with HTML, CSS, and JavaScript.
+                    </p>
+                    <img class="w-44 mx-auto" src="images/profile-pic.svg" alt="image">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="About" class="relative">
+            <div class="bg-violet-700 mx-auto">
+
+                <div class="text-center text-white space-y-8 pt-28 pb-72 px-4 md:px-8">
+
+                    <h2 class="font-bold font-header text-4xl">Hi, i'm Tahir. <span class="sm:block">Nice to meet
+                            you.</span></h2>
+                    <p class="md:w-[66ch] mx-auto text-xl">From the first click to the final scroll, I
                         craft
                         visually appealing
                         and highly responsive websites that make your brand stand out</p>
-                    <img class="w-64 mx-auto" src="images/Saly-43.svg" alt="img">
+
                 </div>
 
             </div>
-        </section>
 
+            <div
+                class="absolute bg-white rounded-lg shadow-lg block md:flex md:justify-center z-10 md:left-40 md:right-40 md:top-80 top-[26rem] right-5 left-5">
 
-        <section>
-            <div class="relative">
-                <div class="bg-violet-700 mx-auto">
+                <div class="">
+                    <div class="p-12 text-center space-y-8">
+                        <div>
+                            <h2 class="font-bold font-header text-3xl">Frontend Developer</h2>
+                            <p class="mt-4 text-lg mx-auto md:w-[44ch]">I like to code things from scratch, and
+                                enjoy
+                                bringing ideas to life in the browser.</p>
+                        </div>
 
-                    <div class="text-center text-white space-y-4 py-40 px-4 md:px-8">
-
-                        <h1 class="font-bold text-3xl">Hi, i'm Tahir. Nice to meet you.</h1>
-                        <p class="w-[38ch] md:w-[66ch] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia saepe
-                            voluptate et libero beatae itaque eum optio distinctio, omnis exercitationem corrupti ut
-                            perspiciatis excepturi. Molestiae labore voluptatem consequuntur. Magni, consequatur</p>
-
-                        <button
-                            class="px-6 py-2 font-medium text-sm text-violet-700 bg-white shadow-lg rounded-lg hover:bg-gray-200 active:bg-gray-300 active:scale-110 duration-300">
-                            Contact Me
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div
-                    class="absolute bg-white rounded-lg shadow-lg block md:flex md:justify-center z-10 md:left-28 md:right-28 md:top-96 top-[32rem] right-5 left-5">
-
-                    <div class="border-b-2 md:border-r-2">
-                        <div class="p-12 text-center space-y-8">
-                            <div>
-                                <h1 class="font-bold text-2xl">Frontend Developer</h1>
-                                <p class="mt-8 text-lg mx-auto w-fit">I like to code things from scratch, and
-                                    enjoy
-                                    bringing ideas to life in the browser.</p>
-                            </div>
-
-                            <div>
-                                <h2 class="text-xl font-semibold text-blue-700">Languages I speak:</h2>
-                                <p class="text-lg mx-auto">HTML, Css, Javascript, React.js</p>
-                            </div>
-                            <div class="space-y-2">
-                                <h2 class="text-xl font-semibold text-blue-700">Dev Tools:</h2>
-                                <p class="text-lg mx-auto">Vs-Code</p>
+                        <div>
+                            <h3 class="text-xl font-semibold font-headlines text-blue-700">Languages I speak:</h3>
+                            <p class="text-lg mx-auto mt-4">HTML, Css, Javascript, React.js</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-700">Dev Tools:</h3>
+                            <div class="mt-4 space-y-2">
+                                <p class="text-lg mx-auto"></p>Vs-Code</p>
                                 <p class="text-lg mx-auto">TailwindCss</p>
                                 <p class="text-lg mx-auto">Bootstrap</p>
-                                <p class="text-lg mx-auto">Github</p>
+                                <p class="text-lg mx-auto">Git</p>
                             </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <div class="p-12 text-center space-y-8">
-                            <div>
-                                <h1 class="font-bold text-xl">Experience</h1>
-                                <p class="mt-8 text-lg mx-auto w-fit">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Explicabo optio beatae esse, quasi, deserunt </p>
-                            </div>
-                            <div>
-                                <h2 class="text-xl font-semibold text-blue-700">Languages I speak:</h2>
-                                <p class="text-lg mx-auto">HTML, CSS, Sass, Git</p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section>
-            <div>
-                <h2 class="font-bold text-2xl">My projects</h2>
-                <p class="text-lg mx-auto">Here are some projects i've worked on. Want to see more?<span>Email me</span>
+        <section id="Projects" class="relative top-[28rem] space-y-8">
+            <div class="text-center">
+                <h2 class="font-bold font-header text-2xl">My Projects</h2>
+                <p class="text-lg mx-auto mt-4">Here are some projects i've worked on. Want to see more? <span
+                        class="text-blue-500"><a href="#">Email me</a></span>
                 </p>
             </div>
-        </section> -->
+
+            <div class="container md:flex sm:space-y-8 md:space-x-4">
+                <div class="relative bg-skin-fill overflow-hidden rounded-2xl border border-transparent m-4">
+                    <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="images/docbook.jpg"
+                        alt="image">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-70">
+                    </div>
+                    <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                        <h2 class="text-3xl text-skin-base font-extrabold sm:text-4xl">
+                            <span class="block">DocBook</span>
+                        </h2>
+                        <p class="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu
+                            sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+                        <div class="mt-10">
+                            <a href="https://docbook.onrender.com"
+                                class="bg-skin-button-accent text-skin-inverted hover:bg-skin-button-accent-hover px-12 py-2 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8">
+                                Visit <span class="ml-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-neon relative bg-skin-fill overflow-hidden rounded-2xl border border-transparent m-4">
+                    <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="images/rock-paper-scissors.jpg"
+                        alt="image">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-70">
+                    </div>
+                    <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                        <h2 class="text-3xl text-skin-base font-extrabold sm:text-4xl">
+                            <span class="block">Rock Paper Scissor</span>
+                        </h2>
+                        <p class="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu
+                            sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+                        <div class="mt-10">
+                            <a href="https://rockpaperscissor-slrx.onrender.com"
+                                class="bg-skin-button-accent text-skin-inverted hover:bg-skin-button-accent-hover px-12 py-2 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8">
+                                Visit <span class="ml-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
