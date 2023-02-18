@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="scroll-smooth font-body text-gray-900">
+<body class="font-body text-gray-900">
     <header>
         <nav class="fixed top-0 left-0 z-20 w-full shadow-sm border-b bg-white opacity-96 px-2 py-2.5 sm:px-4">
             <!-- flex container -->
@@ -43,29 +43,30 @@
 
             <!-- mobile menu -->
             <div id="menu" class="inset-on-menu | md:hidden hidden fixed shadow-2xl bg-gray-50">
-                <div>
+                <div class="relative">
                     <div>
                         <ul class="nav-list | flex flex-col py-44 pl-8 space-y-16 font-medium text-2xl drop-shadow-xl">
 
                             <li>
-                                <a href="#"><span class="mr-2"><i class="fa-solid fa-user"></i></span>About</a>
+                                <a href="#About"><span class="mr-4"><i class="fa-solid fa-user"></i></span>About</a>
                             </li>
 
                             <li>
-                                <a href="#"><span class="mr-2"><i class="fa-solid fa-hammer"></i></span> Projects</a>
+                                <a href="#Projects"><span class="mr-4"><i
+                                            class="fa-solid fa-hammer"></i></span>Projects</a>
                             </li>
 
                             <li>
-                                <a href="#"><span class="mr-2"><i class="fa-solid fa-address-book"></i></span>
+                                <a href="#"><span class="mr-4"><i class="fa-solid fa-address-book"></i></span>
                                     Contact</a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="flex gap-4 pl-8">
-                        <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    <div class="absolute flex gap-6 pl-8 bottom-2">
+                        <a href="https://github.com/TahirIqbal095"><i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/tahir-iqbal-4808b91a3/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="https://twitter.com/Tahiriqbal095"><i class="fa-brands fa-twitter fa-2x"></i></a>
                     </div>
 
                 </div>
@@ -169,8 +170,8 @@
                 </div>
 
                 <div class="theme-neon relative bg-skin-fill overflow-hidden rounded-2xl border border-transparent m-4">
-                    <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="images/rock-paper-scissors.jpg"
-                        alt="image">
+                    <img class="absolute inset-0 w-full h-full object-cover opacity-40"
+                        src="images/rock-paper-scissors.jpg" alt="image">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-70">
                     </div>
@@ -188,6 +189,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-16 justify-center items-center text-center relative top-[34rem]">
+            <div>
+                <h2 class="font-bold font-header text-3xl">Interested in collaborating with me?</h2>
+                <p class="mt-4 text-lg mx-auto md:w-[44ch]">I'm always open to discussing product design work or
+                    partnership opportunities,</p>
+            </div>
+            <div class="mb-6">
+                <a href="#"
+                    class="text-xl flex items-center justify-center gap-2 text-violet-600 border-2 border-violet-600 py-3 px-16 rounded-full bg-white hover:bg-violet-600 hover:text-white">
+                    <span><i class="fa-solid fa-message"></i></i></span>
+                    Start a conversation
+                </a>
             </div>
         </section>
     </main>
