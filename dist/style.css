@@ -1302,6 +1302,10 @@ video {
     padding: 1rem;
   }
 
+  .sm\:p-16{
+    padding: 4rem;
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1320,6 +1324,21 @@ video {
   .sm\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .sm\:text-4xl{
