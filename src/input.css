@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+      --color-text-base: #ffffff;
+      --color-text-muted: #c7d2fe;
+      --color-text-inverted: #4f46fe;
+      --color-fill: #4338ca;
+      --color-button-accent: #ffffff;
+      --color-button-accent-hover: #eef2ff;
+      --color-button-muted: #6366f1;
+    }
+
+    .theme-neon {
+        --color-text-base: #111802;
+        --color-text-muted: #2f4306;
+        --color-text-inverted: #ebfacc;
+        --color-fill: #b3ff17;
+        --color-button-accent: #243403;
+        --color-button-accent-hover: #374f05;
+        --color-button-muted: #d4ff7a;
+    }
+  }
 
 @layer utilities {
     .animation-delay-2000 {
@@ -14,11 +38,11 @@
 }
 
 .inset-on-menu {
-    inset: 0 0 0 40%;
+    inset: 0 0 0 30%;
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #3792e4, #31cabd);
+    background: linear-gradient(90deg, #6d28d9, #8b5cf6, #ec4899);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
